@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"><!-- comment -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- comment -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>My profile</title><!-- comment -->
+    <link rel="stylesheet" type="text/css" href="styles/style1.css"> 
+    </head>
+    <body>
+        <div class="hero">
+            <!-- comment -->
+            <nav>
+                <h2 class="name">Avinaash <span>Jayakumar</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about_">About Me</a></li><!-- comment -->
+                <li><a href="#skill_">Skills</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#contact_">Contact</a></li>
+            </ul>
+            </nav>
+            <div class="content">
+                <h3>Hi,I am</h3><!-- comment -->
+                <h1>Avinaash <span>Jayakumar</span></h1><!-- comment -->
+                <h2>I'm a Front End Web Developer</h2><!-- comment -->
+            </div>
+        </div>
+        <section class ='about_me' id='about_'>
+            <div class='main'>
+                <img src='styles/avi_portrait.jpg' alt='abcd'>
+                <div class="about_content">
+                    <h3>About Me</h3><!-- comment -->
+                    <h5>MCA Student,Website developer</h5>
+                    <p>Currently I'm a MCA student and Developer with rich experience in HTML,CSS and JAVASCRIPT
+                    </p>
+                    <a href="https://colorlib.com/wp/wp-content/uploads/sites/2/404-error-template-16.png"><button type='button'>My Work</button></a>
+                </div>
+            </div>
+        </section>
+        <!-- Skills section started -->
+        <section class='skill_content' id="skill_">
+            <div class='title'>
+                <h2>My <span>Skills</span></h2><!-- Design CSS -->
+                <p>Here is my skills to represent my Expertise</P>
+            </div>
+            <div class="container">
+                <div class="skills">
+                    <h2>HTML</h2>
+                    <div class="progress-bar">
+                        <div class="html"><span>85%</span></div>
+                    </div>
+                    <h2>CSS</h2>
+                    <div class="progress-bar">
+                        <div class="css"><span>80%</span></div>
+                    </div>
+                     <h2>JAVA SCRIPT</h2>
+                    <div class="progress-bar">
+                        <div class="js"><span>70%</span></div>
+                    </div>
+                      <h2>C</h2>
+                    <div class="progress-bar">
+                        <div class="c"><span>65%</span></div>
+                    </div>
+                      <h2>JAVA</h2>
+                    <div class="progress-bar">
+                        <div class="java"><span>30%</span></div>
+                    </div>
+                      <h2>PHP/MYSQL</h2>
+                    <div class="progress-bar">
+                        <div class="php"><span>70%</span></div>
+                    </div>
+                       <h2>MYSQL</h2>
+                    <div class="progress-bar">
+                        <div class="mysql"><span>75%</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--skill section ended-->
+        <section class="contact_content" id="contact_">
+            <div class="contactInfo">
+                <h1>Connect With Me</h1>
+                <p>Let me give you an amazing website.<br>feel free to get in touch with me.</p>
+                <div class="contact-box">
+                  <div class="contact-left">
+                     <h3>Send your request</h3>
+                     
+                     <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Enter your name">
+                            </div>
+                                <div class="input-group">
+                                    <label>Phone Number</label>
+                                    <input type="text" placeholder="only 10 digits">
+                                </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="should@gmail.com">
+                            </div>
+                                <div class="input-group">
+                                    <label>Subject</label>
+                                    <input type="text" placeholder="Enter Subject">
+                                </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"></textarea>
+                        <button type="button1" onclick="sendEmail()">SEND</button>
+                     </form>
+                     <script src=" https://smtpjs.com/v3/smtp.js"></script>
+                  <script>
+                    function sendEmail(){
+                        Email.send({
+                            Host : "smtp.gmail.com",
+                            Username : "javinaash5@gmail.com",
+                            Password : "avinaash27",
+                            To : 'javinaash5@gmail.com',
+                            From : document.getElementById("email").value,
+                            Subject : "New contact form enquiry",
+                            Body : "Name: "+document.getElementById("name").value+"<br> Phone Number: "+document.getElementById("phone number").value+"<br> Email: "+document.getElementById("email").value+"<br> Subject: "+document.getElementById("subject").value+"<br> Message: "+document.getElementById("message").value
+                        }).then(
+                        message => alert("Thank you for contacting me.I'll getback you soon")
+                        );
+   
+                    }
+                  </script>
+                  </div>
+                 
+                  <div class="contact-right">
+                    <h3>Reach Me</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>javinaash5@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number</td>
+                            <td>7904268396</td>
+                        </tr>
+                        <td>Address</td>
+                        <td>No:38b,venugopal street,<br>mugappair west,<br>chennai-600037.</td>
+                    </table>
+
+                  </div>
+                </div>
+            </div>
+            </section>
+            </body>
+            <footer>
+                <p>Avinaash J</p>
+                <p>If you want to get in touch with me-please click on the icon below and follow me in social media.</p>
+                <div class="social">
+                    <a href="https://www.instagram.com/avinaash.j.7/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4a4db110286437.560e265e86fa2.jpg"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.linkedin.com/feed/"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/AvinaashJayakumar"><ion-icon name="logo-github"></ion-icon></a>
+                </div>
+                <p class="end">©copyrights 2022|All rights reserved</p>
+                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            </footer>
+           
+                
+        
+        
+        
+   
+</html>
